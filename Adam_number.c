@@ -5,7 +5,7 @@
       int power(int);
       int sqroot(int);
 
-main()
+int main()
 {
      
       int n,r1=0,r2=0,sq=0,p=0;
@@ -18,7 +18,7 @@ main()
       printf("True");
       else
       printf("False");     
-      
+    
 }
 int power(int n)
 {
