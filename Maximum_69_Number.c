@@ -1,10 +1,10 @@
-#include<stdio.h>
-int maximum69number(int num)
+#include <stdio.h>
+int maximum69Number (int num) 
 {
     int arr[4];
+    
     int i=3;
-    while(num!=0)
-    {
+    while(num!=0){
         arr[i--]=num%10;
         num/=10;
     }
@@ -12,8 +12,8 @@ int maximum69number(int num)
     {
         if(arr[i]==6)
         {
-            arr[i]=9;
-            break;
+            arr[i]=9;break;
+            
         }
     }
     int ans=0,mul=1;
@@ -28,5 +28,5 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    printf("%d",maximum69number(n));
-}    
+    printf("%d",maximum69Number(n));
+}
