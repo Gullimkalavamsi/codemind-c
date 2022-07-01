@@ -3,17 +3,17 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    for(int i=0;i<n;i++)
     {
-        for(int j=1;j<=n;j++)
+        for(int j=0;j<n;j++)
         {
-            if(j==1 ||i==j ||i==n)
+            if(i==j || i+j==n-1)
             {
-                printf("*");
+                printf("x");
             }
             else
             {
-                printf(" ");
+                printf("0");
             }
         }
         printf("
